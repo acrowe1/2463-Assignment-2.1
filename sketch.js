@@ -35,7 +35,6 @@ function setup() {
   buttonStop.position(0,5);
   buttonStop.mousePressed(() => sounds.stopAll());
 
-  text('Distort the audio!!'); 
   distSlider = createSlider(0, 1, 0, 0.5); 
   distSlider.position(150,275);
   distSlider.mouseMoved(() => distAmt.distortion = distSlider.value()); 
@@ -43,4 +42,5 @@ function setup() {
 
 function draw() {
   background(220);
+  text('Distort the audio!', 150, 260); 
 }
